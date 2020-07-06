@@ -1,0 +1,128 @@
+@layout('layouts.app')
+
+@section('content')
+
+<header class="masthead" style="background-image: url('/img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>New Post</h1>
+            <span class="subheading"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<div class = "container">
+
+    <div class="row">
+    
+        <div class = "col-md-8 offset-md-2"> 
+        
+            <form action = "/post/store" method = "POST" encType = "multipart/form-data">
+            
+                
+            
+                <div class = "control-group">
+                
+                    <div class = "form-group floating-label-form-group controls">
+                    
+                    
+                        <label>Web Series Name</label>
+                        
+                        <input type = "text" placeholder = " Web Series Name " name = "webSeriesName" class = "form-control">
+
+                    </div>
+                
+                </div>
+                
+                <div class = "control-group">
+                
+                    <div class = "form-group floating-label-form-group controls">
+                    
+                    
+                        <label>Genre</label>
+                        
+                        <input type = "text" placeholder = "Genre" name = "genre" class = "form-control">
+
+                    </div>
+                
+                </div>
+
+                <div class = "control-group">
+                
+                    <div class = "form-group floating-label-form-group controls">
+                    
+                    
+                        <label>OTT Platform</label>
+                        
+                        <input type = "text" placeholder = "OTT Platform" name = "ottPlatform" class = "form-control">
+
+                    </div>
+                
+                </div>
+
+                <div class = "control-group">
+                
+                            <div class = "form-group controls">
+                                    <label> Ratings</label>
+                            <div class="rating-wrapper">
+                                
+                                <input type = "radio" name = "ratings" id = "star-5" value = "5"><label for = "star-5"></label>
+                                <input type = "radio" name = "ratings" id = "star-4" value = "4"><label for = "star-4"></label>
+                                <input type = "radio" name = "ratings" id = "star-3" value = "3"><label for = "star-3"></label>
+                                <input type = "radio" name = "ratings" id = "star-2" value = "2"><label for = "star-2"></label>
+                                <input type = "radio" name = "ratings" id = "star-1" value = "1"><label for = "star-1"></label>
+                                    
+                            </div>
+                            </div>
+                
+                </div>
+    
+                
+                <div class = "control-group">
+                
+                    <div class = "form-group floating-label-form-group controls">
+                    
+                    
+                        <label>Write Your Reviews</label>
+                        
+                        <textarea name = "reviews" placeholder = "Write your Reviews here..."  cols = "30" rows = "10" class = "form-control"></textarea>
+
+                    </div>
+                
+                </div>
+
+                <div class = "form-group">
+
+                    <input type = "file" name = "image" class = "form-control-file">
+
+                </div>
+                
+                
+                <div class = "form-group my-4 text-center" >
+                
+                    <button class = "btn btn-primary">Create Post </button>
+                
+                </div>
+                
+            </form>
+        
+        </div>
+    
+    </div>
+
+</div>
+
+
+@endsection
+
+@section('styles')
+
+<link href="/css/ratings.css" rel="stylesheet">
+
+@endsection

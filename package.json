@@ -1,0 +1,35 @@
+{
+  "name": "apniraay",
+  "version": "1.0.0",
+  "description": "apniraay",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Sanket Sanglikar",
+  "license": "ISC",
+  "engines": {
+    "node": "12.14.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "edge.js": "^1.1.4",
+    "express": "^4.17.1",
+    "express-edge": "^2.0.2",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-session": "^1.17.1",
+    "jquery-bar-rating": "^1.2.2",
+    "jsdom": "^16.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "nodemailer": "^6.4.10",
+    "randomstring": "^1.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
